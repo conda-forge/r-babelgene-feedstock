@@ -1,4 +1,4 @@
-{% set version = '21.4' %}
+{% set version = "22.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/babelgene_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/babelgene/babelgene_{{ version }}.tar.gz
-  sha256: c0f91ec94312baff35116f328fe47a43a01518f72128635a0c19eab146bd65be
+  sha256: 0f4a69bd472ce67682cb03e8186238bd3484fb9bbf185c6f291baa2d3481659c
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -41,14 +41,8 @@ test:
 about:
   home: https://igordot.github.io/babelgene/
   license: MIT
-  summary: Genomic analysis of model organisms often requires the use of databases based on human
-    data or making comparisons to patient-derived resources. This requires converting
-    genes between human and non-human analogues. The babelgene R package provides predicted
-    gene orthologs/homologs for frequently studied model organisms in an R-friendly
-    tidy/long format. The package integrates orthology assertion predictions sourced
-    from multiple databases as compiled by the HGNC Comparison of Orthology Predictions
-    (HCOP) (Wright et al. 2005 <doi:10.1007/s00335-005-0103-2>, Eyre et al. 2007 <doi:10.1093/bib/bbl030>,
-    Seal et al. 2011 <doi:10.1093/nar/gkq892>).
+  summary: Genomic analysis of model organisms often requires the use of databases based on human data or making comparisons to patient-derived resources. This requires converting genes between human and non-human analogues. The babelgene R package provides predicted gene orthologs/homologs for frequently studied model organisms
+    in an R-friendly tidy/long format. The package integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions (HCOP) (Wright et al. 2005 <doi:10.1007/s00335-005-0103-2>, Eyre et al. 2007 <doi:10.1093/bib/bbl030>, Seal et al. 2011 <doi:10.1093/nar/gkq892>).
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
