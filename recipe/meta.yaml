@@ -1,4 +1,4 @@
-{% set version = "22.3" %}
+{% set version = "22.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/babelgene_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/babelgene/babelgene_{{ version }}.tar.gz
-  sha256: 0f4a69bd472ce67682cb03e8186238bd3484fb9bbf185c6f291baa2d3481659c
+  sha256: ce6601dcb78352516d3b0355042c52a20e154b39d3b27b93ff52150a59c885e2
 
 build:
   merge_build_host: true  # [win]
