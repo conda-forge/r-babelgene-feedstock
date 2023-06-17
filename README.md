@@ -1,11 +1,11 @@
-About r-babelgene
-=================
+About r-babelgene-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-babelgene-feedstock/blob/main/LICENSE.txt)
 
 Home: https://igordot.github.io/babelgene/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-babelgene-feedstock/blob/main/LICENSE.txt)
 
 Summary: Genomic analysis of model organisms often requires the use of databases based on human data or making comparisons to patient-derived resources. This requires converting genes between human and non-human analogues. The babelgene R package provides predicted gene orthologs/homologs for frequently studied model organisms in an R-friendly tidy/long format. The package integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions (HCOP) (Wright et al. 2005 <doi:10.1007/s00335-005-0103-2>, Eyre et al. 2007 <doi:10.1093/bib/bbl030>, Seal et al. 2011 <doi:10.1093/nar/gkq892>).
 
