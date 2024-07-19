@@ -1,6 +1,5 @@
 {% set version = "22.9" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-babelgene
@@ -13,8 +12,7 @@ source:
   sha256: ce6601dcb78352516d3b0355042c52a20e154b39d3b27b93ff52150a59c885e2
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
